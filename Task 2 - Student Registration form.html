@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #f0f4f7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+            vertical-align: middle;
+        }
+        .form-label {
+            text-align: right;
+            padding-right: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        .form-input {
+            text-align: left;
+        }
+        input[type="text"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #6b2222;
+            border-radius: 5px;
+            background-color: #ffffff;
+        }
+        .form-buttons {
+            text-align: center;
+            padding-top: 20px;
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #363434;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #292626;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form>
+            <table>
+                <tr>
+                    <td class="form-label">First Name:</td>
+                    <td class="form-input"><input type="text" name="first_name" required></td>
+                </tr>
+                <tr>
+                    <td class="form-label">Last Name:</td>
+                    <td class="form-input"><input type="text" name="last_name" required></td>
+                </tr>
+                <tr>
+                    <td class="form-label">Date of Birth:</td>
+                    <td class="form-input"><input type="date" name="dob" required></td>
+                </tr>
+                <tr>
+                    <td class="form-label">Email id:</td>
+                    <td class="form-input"><input type="text" name="email" required></td>
+                </tr>
+                <tr>
+                    <td class="form-label">Mobile Number:</td>
+                    <td class="form-input"><input type="text" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="form-buttons">
+                        <input type="submit" value="SUBMIT">
+                        <input type="reset" value="RESET">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
+
